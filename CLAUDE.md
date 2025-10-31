@@ -8,13 +8,14 @@ This repository implements a "Team of Rivals" strategic decision-making framewor
 
 ## Repository Structure
 
-- `team-of-rivals/` - Main directory containing all skills
-  - `apex-visionary/` - APEX: Visionary strategic thinking, moonshot opportunities
-  - `veto-skeptic/` - VETO: Evidence-based skepticism, risk analysis
-  - `forge-operator/` - FORGE: Operational reality, resource planning
-  - `compass-ethicist/` - COMPASS: Ethical evaluation, stakeholder impact
-  - `domain-expert/` - Adaptive domain-specific expertise (rotates based on context)
-- `rivals-development-prompt.md` - Original development specifications and team dynamics
+- `apex-visionary/` - APEX: Visionary strategic thinking, moonshot opportunities
+- `veto-skeptic/` - VETO: Evidence-based skepticism, risk analysis
+- `forge-operator/` - FORGE: Operational reality, resource planning
+- `compass-ethicist/` - COMPASS: Ethical evaluation, stakeholder impact
+- `domain-expert/` - Adaptive domain-specific expertise (rotates based on context)
+- `prompts/` - Project instructions and development documentation
+  - `project-instructions.md` - Claude AI Project Knowledge for automatic Team of Rivals analysis
+  - `rivals-development-prompt.md` - Original development specifications and team dynamics
 
 ## Skill Architecture
 
@@ -76,9 +77,13 @@ If adding a new rival persona:
 3. Include: Core persona, analysis framework, response structure, output format
 4. Update `rivals-development-prompt.md` team composition
 
-### Skill Invocation Format
+### Usage Approaches
 
-Skills use Claude Code's skill system. The SKILL.md format with YAML frontmatter enables automatic discovery and invocation.
+**As Individual Skills:**
+Skills use Claude Code's skill system.
+
+**As Project Knowledge:**
+The `prompts/project-instructions.md` file can be added to a Claude AI Project's Knowledge base, enabling automatic deployment of all perspectives based on conversational context.
 
 ## Decision Synthesis Process
 

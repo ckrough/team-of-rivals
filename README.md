@@ -1,10 +1,10 @@
 # Team of Rivals: AI Decision-Making Framework
 
-A strategic decision-making framework inspired by Abraham Lincoln's "Team of Rivals" approach, implemented as Claude AI Skills. Get diverse, adversarial perspectives on your decisions instead of a single AI viewpoint.
+A strategic decision-assistance framework inspired by Abraham Lincoln's "Team of Rivals" approach, implemented as Claude AI Skills. Get diverse, adversarial perspectives on your decisions instead of a single AI viewpoint.
 
 ## Why This Exists
 
-Most AI assistants provide a single perspective. But the best decisions come from productive disagreement—where different viewpoints challenge assumptions, expose blind spots, and force rigorous thinking.
+Most AI assistants provide a single perspective. But the best decisions come from productive disagreement where different viewpoints challenge assumptions, expose blind spots, and force rigorous thinking.
 
 This framework creates five distinct AI personas that analyze your decisions from different angles:
 - **APEX** (The Visionary) - Expands possibilities, ignores constraints
@@ -15,35 +15,46 @@ This framework creates five distinct AI personas that analyze your decisions fro
 
 ## How It Works
 
-These are [Claude AI Skills](https://support.anthropic.com/en/articles/9950645-what-are-skills-in-claude-ai) - specialized personas you can invoke in conversation with Claude. Each skill applies structured analytical frameworks to your decisions and argues from genuine conviction, creating productive tension rather than false consensus.
+These are [Claude AI Skills](https://support.claude.com/en/articles/12512176-what-are-skills). Each skill applies structured analytical frameworks to your decisions and argues from genuine conviction, creating productive tension rather than false consensus.
 
 ### Installation
 
+**Install Skills**
+
+Install each persona as a separate Claude AI Skill for explicit invocation:
+
 1. Clone this repository
 2. In Claude AI (claude.ai), navigate to your Skills settings
-3. Import the skills from the `team-of-rivals/` directory
-4. Each skill can now be invoked during conversations
+3. Import each skill's zipfile:
+   - `apex-visionary/apex-visionary.zip`
+   - `veto-skeptic/veto-skeptic.zip`
+   - `forge-operator/forge-operator.zip`
+   - `compass-ethicist/compass-ethicist.zip`
+   - `domain-expert/domain-expert.zip`
 
-### Using the Skills
+**Optional: Integrated Team of Rivals Project (Recommended)**
 
-**For a single perspective:**
+Create a [Claude AI Project](https://support.claude.com/en/articles/9517075-what-are-projects) that automatically applies all perspectives using Project Knowledge:
+
+1. In Claude AI (claude.ai), create a new Project.
+2. Add `prompts/project-instructions.md` to Project Instructions
+   - Edit "Instructions"
+   - Paste the contents of `project-instructions.md`
+3. Claude will automatically apply the Team of Rivals framework to your Project discussions
+
+### Using the Framework
+
+**With Individual Skills:**
 ```
-Invoke the APEX skill and analyze this opportunity: [your decision]
+Automatic - Claude AI will invoke skills that match the need of the context
 ```
 
-**For comprehensive analysis (recommended):**
+**Withing Project Context:**
 ```
-I need to decide whether to [your decision].
-
-Please analyze this using:
-1. APEX (visionary perspective)
-2. VETO (skeptical analysis)
-3. FORGE (operational reality)
-4. COMPASS (ethical evaluation)
-5. Domain Expert (specify: technical/financial/legal/market)
-
-Then synthesize the perspectives.
+Analyze [proposal]
 ```
+
+Claude automatically deploys relevant perspectives and provides synthesis based on the project-instructions.md guidance.
 
 ## The Team
 
