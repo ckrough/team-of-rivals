@@ -1,3 +1,6 @@
+
+# Superceded by [Backchain Plugins / Advisors](https://github.com/backchainai/backchain-plugins/tree/main/advisors)
+
 # Team of Rivals: AI Decision-Making Framework
 
 A strategic decision-assistance framework inspired by Abraham Lincoln's "Team of Rivals" approach, implemented as Claude AI Skills. Get diverse, adversarial perspectives on your decisions instead of a single AI viewpoint.
